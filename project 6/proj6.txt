@@ -1,0 +1,244 @@
+#1
+// Handles a Format Exception if user does not enter a number
+using System;
+public class DebugNine01
+{
+   public static void Main()
+   {
+      double salary = 0;
+      string salVal;
+      bool isValidSalary = false;
+      while (!isValidSalary)
+      {
+         try
+         {
+            Console.Write("Enter an employee's salary ");
+            salVal = Console.ReadLine();
+            salary = Convert.ToDouble(salVal);
+            isValidSalary = true;
+         }
+         catch(FormatException)
+        {
+            Console.WriteLine
+               ("You must enter a number for the salary");
+         }
+      }
+      Console.WriteLine("The salary {0} is valid", salary.ToString());
+      Console.ReadLine();
+   }
+}
+
+
+
+
+#2
+using System;
+// Preventing non-numeric data entry
+// Then preventing division by 0
+public class DebugNine02
+{
+    public static void Main()
+    {
+        int num = 0, denom = 0, result = 0;
+        bool dataEntryIsValid = false;
+        while (!dataEntryIsValid)
+        {
+            try
+            {
+                DataEntry(ref num, ref denom);
+                dataEntryIsValid = true;
+            }
+            catch (FormatException e)
+            {
+                //Console.WriteLine("Invalid entry - please enter numbers");
+                Console.WriteLine(e.Message);
+                dataEntryIsValid = false;
+            }
+
+            try
+            {
+                result = num / denom;
+                Console.WriteLine("Division is successful");
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("Division failed");
+                dataEntryIsValid = false;
+            }
+        }
+        Console.WriteLine("Result is {0}", result);
+        Console.ReadLine();
+    }
+    public static void DataEntry(ref int num, ref int denom)
+    {
+        string str;
+        Console.Write("Enter a numerator ");
+        str = Console.ReadLine();
+        num = Convert.ToInt32(str);
+        Console.Write("Enter a denominator ");
+        str = Console.ReadLine();
+        denom = Convert.ToInt32(str);
+       
+        if (denom > num)
+        {
+
+            FormatException jghbdh = new FormatException("In Integer Division you cannot have decimal results!");
+            throw jghbdh;
+
+        }
+    }
+}
+
+
+#3
+// Employee's salary should not be negative
+// Include stack trace when exception occurs
+using System;
+public class DebugNine03
+{
+   public static void Main()
+   {
+      Employee emp = new Employee();
+      try
+      {
+         emp.IdNum = 234;
+         emp.Salary = -12;
+      }
+      catch (NegativeSalaryException e)
+      {
+         Console.WriteLine(e.msg);
+         Console.WriteLine(e.StackTrace);
+      } 
+       Console.ReadLine();
+   }
+    
+}
+
+public class NegativeSalaryException : Exception
+{
+   public string msg =
+     "Employee salary is negative.";
+   //public NegativeSalaryException() 
+   //{
+   //}
+}
+
+public class Employee
+{
+   private int idNum;
+   private double salary;
+   public int IdNum
+   {
+      get
+      {
+         return idNum;
+      }
+      set
+      {
+          idNum = value;
+      }
+      
+   }
+   public double Salary
+   {
+      get
+      {
+         return salary;
+      }
+      set
+      {
+        if(value < 0)
+        {
+           NegativeSalaryException salExcep =
+              new NegativeSalaryException();
+           throw(salExcep);
+        }
+        salary = value;
+      }
+   }
+
+}
+   
+
+#4
+// Declare a Student
+// Both ID and GPA must be valid to continue
+using System;
+public class DebugNine04
+{
+   public static void Main()
+   {
+      Student stu = new Student();
+      bool areNumbersGood = false;
+      while(!areNumbersGood)
+      {
+         try
+         {
+            stu.setID();
+            stu.setGPA();
+            areNumbersGood = true;
+         }
+         catch (FormatException e)
+         {
+            Console.WriteLine(e.Message);
+            Console.WriteLine("(Either the student ID or the GPA");
+            Console.WriteLine(" was not in the correct format)");
+            Console.WriteLine("You will have to re-enter the student data.");
+            
+         }
+         
+      }
+      Console.WriteLine("Valid student");
+      Console.ReadLine();
+   }
+}
+public class Student
+{
+   private int stuId;
+   private double stuGpa;
+   public void setID()
+   {
+      string stuNumber;
+      try
+      {
+         Console.Write("Enter student ID ");
+         stuNumber = Console.ReadLine();
+         stuId = Convert.ToInt32(stuNumber);
+      }
+      catch(Exception fe)
+      {
+         throw(fe);
+      }
+   }
+   public void setGPA()
+   {
+      string stuGPAString;
+     
+         Console.Write("Enter student GPA ");
+         stuGPAString = Console.ReadLine();
+         stuGpa = Convert.ToDouble(stuGPAString);
+         if (stuGpa > 5.0) //Students can't have THAT much extra credit
+         {
+             FormatException supbra = new FormatException("You can't have that high of a GPA!");
+             throw supbra;
+         }
+
+         else if (stuGpa < 0 )
+         {
+             FormatException supbra = new FormatException("Can't have negative GPA");
+             throw supbra;
+         }
+         else if (stuGpa < .5)
+         {
+             FormatException supbra = new FormatException("Your grades are terrible get out of my school!");
+             throw supbra;
+         }
+     
+      
+   }
+}   
+
+   
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Yatzee">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Yatzee.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Yatzee.suo">
+</Property><Property Name="Date" Value="Friday, September 09, 2011">
+</Property><Property Name="Time" Value="20:20 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Yatzee.sln" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Yatzee.suo" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee.suo">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Yatzee.csproj" Description="Project file successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Yatzee.csproj">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\frmMain.cs" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\frmMain.cs">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\frmMain.Designer.cs" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\frmMain.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Program.cs" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Program.cs">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Properties\Settings.settings" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\frmMain.resx" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Properties\Resources.resx" Description="File successfully backed up as C:\Documents and Settings\Tdmonkey\My Documents\My Dropbox\INFO 2200\Final Project\Yatzee\Yatzee\Backup\Backup\Yatzee\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Yatzee.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Yatzee" Source="Yatzee\Yatzee.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Yatzee.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Yatzee.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Yatzee" Source="Yatzee\Yatzee.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
